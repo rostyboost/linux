@@ -1335,4 +1335,8 @@ config SND_SOC_I_SABRE_CODEC
 	tristate "Audiophonics I-SABRE Codec"
 	depends on I2C
 
+config SND_SOC_MA120X0P
+	tristate "Merus Audio Multilevel Class D amplifier"
+	depends on I2C
+
 endmenu

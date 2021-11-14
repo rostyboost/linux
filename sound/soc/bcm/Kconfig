@@ -285,3 +285,10 @@ config SND_RPI_WM8804_SOUNDCARD
 	help
 	  Say Y or M if you want to add support for the Raspberry Pi
           generic driver for WM8804 based soundcards.
+
+config SND_BCM2708_SOC_MERUS_AMP
+	tristate "Support for Merus Audio Multilevel Amp 
+	depends on SND_BCM2708_SOC_I2S || SND_BCM2835_SOC_I2S
+	select SND_SOC_MA120X0P
+	help
+	  Say Y or M if you want to add support for Merus Amp.
